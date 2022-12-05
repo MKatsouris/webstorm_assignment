@@ -1,0 +1,31 @@
+.header1{
+    border:1px solid #BE1622 ;
+}
+.menu ul{
+
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+.title{
+    text-align: center;
+    color: #C7CBDA;
+
+}
+.menu li {
+    text-align: left;
+    display: inline;
+    padding: 1em;
+}
+.menu li a {
+    text-decoration: none;
+    color:#A4D3F2;
+}
+.menu li a:hover {
+    background-color: #F2BE1A;
+}
+.logo{
+
+}
