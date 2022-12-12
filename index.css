@@ -1,31 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 .header1{
     border:1px solid #BE1622 ;
+    background-color: #BE1622;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+    height: 110px;
+    padding: 10px;
+    width:100%;
+}
+.menu{
+    margin-left: 700px;
+    margin-top: -30px;
 }
 .menu ul{
 
     display: inline;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 0em;
+    margin: 0em;
+
 
 }
 .title{
-    text-align: center;
+    margin-left: 300px;
+    margin-top: -30px;
     color: #C7CBDA;
-
 }
 .menu li {
-    text-align: left;
-    display: inline;
-    padding: 1em;
+    display: inline-block;
+    padding: 4px 4px;
+    margin: 4px 4px;
 }
 .menu li a {
     text-decoration: none;
     color:#A4D3F2;
+
 }
 .menu li a:hover {
     background-color: #F2BE1A;
 }
 .logo{
+    margin-left: 50px;
 
+}
+#h2{
+    color: #F2BE1A;
+    margin-top: 20px;
+}
+#h22{
+    color: #F2BE1A;
+    margin-top: 20px;
+}
+#h1{
+    font-size: 3em;
+}
+.main{
+    margin-left: 150px;
+    margin-top: 50px;
+    align-items: center;
+
+}
+#video1{
+
+}
+#video2{
+
+}
+.footer1{
+    position: sticky;
+    display:block;
+    color: white;
+    border:1px solid #34516C ;
+    background-color:  #34516C;
+    justify-content: space-around;
+    height: 220px;
+    width:100%;
+}
+.grid1{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.grid2{
+    margin-left: 300px;
+    margin-top: -60px;
+}
+.grid3{
+    margin-left: 600px;
+    margin-top: -60px;
+
+}
+
+/* the code was adopted by:https://www.w3schools.com/html/html_responsive.asp */
+@media screen and (max-width: 1500px) {
+    .logo, .menu,.menu,.menu,.menu,.menu.header1 {
+        width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
 }
