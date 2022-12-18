@@ -55,10 +55,6 @@
     margin-left: 50px;
 
 }
-.hamburger {
-    width: 30px;
-    margin-left: 650px;
-}
 /*titles on top of videos */
 #h2{
     color: #F2BE1A;
@@ -79,7 +75,7 @@
     align-items: center;
 
 }
-/* footer formatting*/
+/* footer formatting https://www.w3schools.com/howto/howto_css_fixed_footer.asp*/
 .footer1{
     position: sticky;
     display:block;
