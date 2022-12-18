@@ -3,126 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <title>Products</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="products.js" defer></script> <!--read the javascript products from js folder -->
 </head>
 <body>
+<header>
+    <div class="header1">
+
+        <div class="logo">
+            <img class="image" src="logo/uclan_logo.png" alt="Uclan_logo">
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="http://localhost:63342/online_shop/index.html?_ijt=400fstq6kq1s0335qvol50aghg&_ij_reload=RELOAD_ON_SAVE">Home</a></li>
+                <li><a href="http://localhost:63342/online_shop/products.html?_ijt=400fstq6kq1s0335qvol50aghg&_ij_reload=RELOAD_ON_SAVE">Products</a></li>
+                <li><a href="http://localhost:63342/online_shop/cart.html?_ijt=400fstq6kq1s0335qvol50aghg&_ij_reload=RELOAD_ON_SAVE">Cart</a></li>
+            </ul>
+        </div>
+        <div class="title">  <h2>Student Shop</h2>
+        </div>
+    </div>
+</header>
+<div class="products">
 <div id="hoodies">
-
+    <div id="jumpers">
+        <div id="Tshirts">
+            <div id="description">
+            <div id="button">
+            <div id="addCart">
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
 </div>
-
-
-<script>
-    var hoodies = [
-        { name : "UCLan Hoodie", color : "Purple",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (1).jpg" },
-        { name : "UCLan Hoodie", color : "Light Blue",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (2).jpg" },
-        { name : "UCLan Hoodie", color : "Green",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (3).jpg" },
-        { name : "UCLan Hoodie", color : "Dark Grey",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (4).jpg" },
-        { name : "UCLan Hoodie", color : "Black",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (5).jpg" },
-        { name : "UCLan Hoodie", color : "Salmon",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (6).jpg" },
-        { name : "UCLan Hoodie", color : "Burgundy",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (7).jpg" },
-        { name : "UCLan Hoodie", color : "Light Grey",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (8).jpg" },
-        { name : "UCLan Hoodie", color : "Slate Blue",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (9).jpg" },
-        { name : "UCLan Hoodie", color : "Orange",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (10).jpg" },
-        { name : "UCLan Hoodie", color : "Teal",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (11).jpg" },
-        { name : "UCLan Hoodie", color : "Navy",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (12).jpg" },
-        { name : "UCLan Hoodie", color : "Orange",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (13).jpg" },
-        { name : "UCLan Hoodie", color : "Creame",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (14).jpg" },
-        { name : "UCLan Hoodie", color : "Lime",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (15).jpg" },
-        { name : "UCLan Hoodie", color : "Off Blue",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (16).jpg" },
-        { name : "UCLan Hoodie", color : "Red",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (17).jpg" },
-        { name : "UCLan Hoodie", color : "Charcoal",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (18).jpg" },
-        { name : "UCLan Hoodie", color : "Navy Blue",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (19).jpg" },
-        { name : "UCLan Hoodie", color : "Lighter Grey",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (20).jpg" },
-        { name : "UCLan Hoodie", color : "New Blue",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (21).jpg" },
-        { name : "UCLan Hoodie", color : "Forest Green",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (22).jpg" },
-        { name : "UCLan Hoodie", color : "Ocean Blue",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (23).jpg" },
-        { name : "UCLan Hoodie", color : "Pink",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (24).jpg" },
-        { name : "UCLan Hoodie", color : "Orange New",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (25).jpg" },
-        { name : "UCLan Hoodie", color : "Black",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (26).jpg" },
-        { name : "UCLan Hoodie", color : "Light Off Grey",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (27).jpg" },
-        { name : "UCLan Hoodie", color : "Rusty Red",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (28).jpg" },
-        { name : "UCLan Hoodie", color : "Slate Grey",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (29).jpg" },
-        { name : "UCLan Hoodie", color : "Bright Green",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (30).jpg" },
-        { name : "UCLan Hoodie", color : "Bright Pink",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (31).jpg" },
-        { name : "UCLan Hoodie", color : "Burgundy New",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (32).jpg" },
-        { name : "UCLan Hoodie", color : "Navy New",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (33).jpg" },
-        { name : "UCLan Hoodie", color : "Bright Green",description: "saloon",price: 7, image: "images/items/hoodies/hoodie (34).jpg" }
-
-        ];
-    var count=0;
-
-    cars.forEach(
-        car => {
-            document.getElementById("demo").innerHTML += "<br/><br/><br/> "+ car.color + " "+car.type+" "+car.capacity;
-            document.getElementById("demo").innerHTML += "<input type='button' onclick='viewDetails("+count+")' value='Details'></input>";
-            document.getElementById("demo").innerHTML += "<input type='button' onclick='addToCart("+count+")' value='Add to cart'></input>";
-
-            count++;
-        });
-
-
-    function viewDetails(index){
-
-        sessionStorage.selected = JSON.stringify(cars[index]);
-
-        window.location.href = "product.html";
-
-    }
-
-
-    function addToCart(index){
-
-        var storedCart;
-
-        if(localStorage.cart){
-            storedCart = JSON.parse(localStorage.cart);
-        }else{
-            storedCart = new Array();
-        }
-
-
-        storedCart.push(cars[index]);
-
-        localStorage.cart = JSON.stringify(storedCart);
-
-    }
-</script>
-<div class="hoodies">
-    UCLan Hoodie	Purple	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (1).jpg					['UCLan Hoodie','Purple','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (1).jpg']
-    UCLan Hoodie	Light Blue	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (2).jpg					['UCLan Hoodie','Light Blue','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (2).jpg']
-    UCLan Hoodie	Green	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (3).jpg					['UCLan Hoodie','Green','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (3).jpg']
-    UCLan Hoodie	Dark Grey	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (4).jpg					['UCLan Hoodie','Dark Grey','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (4).jpg']
-    UCLan Hoodie	Black	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (5).jpg					['UCLan Hoodie','Black','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (5).jpg']
-    UCLan Hoodie	Salmon	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (6).jpg					['UCLan Hoodie','Salmon','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (6).jpg']
-    UCLan Hoodie	Burgundy	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (7).jpg					['UCLan Hoodie','Burgundy','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (7).jpg']
-    UCLan Hoodie	Light Grey	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (8).jpg					['UCLan Hoodie','Light Grey','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (8).jpg']
-    UCLan Hoodie	Slate Blue	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (9).jpg					['UCLan Hoodie','Slate Blue','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (9).jpg']
-    UCLan Hoodie	Orange	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (10).jpg					['UCLan Hoodie','Orange','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (10).jpg']
-    UCLan Hoodie	Teal	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (11).jpg					['UCLan Hoodie','Teal','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (11).jpg']
-    UCLan Hoodie	Navy	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (12).jpg					['UCLan Hoodie','Navy','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (12).jpg']
-    UCLan Hoodie	Orange	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (13).jpg					['UCLan Hoodie','Orange','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (13).jpg']
-    UCLan Hoodie	Creame	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (14).jpg					['UCLan Hoodie','Creame','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (14).jpg']
-    UCLan Hoodie	Lime	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (15).jpg					['UCLan Hoodie','Lime','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (15).jpg']
-    UCLan Hoodie	Off Blue	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (16).jpg					['UCLan Hoodie','Off Blue','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (16).jpg']
-    UCLan Hoodie	Red	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (17).jpg					['UCLan Hoodie','Red','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (17).jpg']
-    UCLan Hoodie	Charcoal	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (18).jpg					['UCLan Hoodie','Charcoal','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (18).jpg']
-    UCLan Hoodie	Navy Blue	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (19).jpg					['UCLan Hoodie','Navy Blue','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (19).jpg']
-    UCLan Hoodie	Lighter Grey	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (20).jpg					['UCLan Hoodie','Lighter Grey','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (20).jpg']
-    UCLan Hoodie	New Blue	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (21).jpg					['UCLan Hoodie','New Blue','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (21).jpg']
-    UCLan Hoodie	Forest Green	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (22).jpg					['UCLan Hoodie','Forest Green','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (22).jpg']
-    UCLan Hoodie	Ocean Blue	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (23).jpg					['UCLan Hoodie','Ocean Blue','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (23).jpg']
-    UCLan Hoodie	Pink	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (24).jpg					['UCLan Hoodie','Pink','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (24).jpg']
-    UCLan Hoodie	Orange New	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (25).jpg					['UCLan Hoodie','Orange New','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (25).jpg']
-    UCLan Hoodie	Black	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (26).jpg					['UCLan Hoodie','Black','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (26).jpg']
-    UCLan Hoodie	Light Off Grey	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (27).jpg					['UCLan Hoodie','Light Off Grey','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (27).jpg']
-    UCLan Hoodie	Rusty Red	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (28).jpg					['UCLan Hoodie','Rusty Red','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (28).jpg']
-    UCLan Hoodie	Slate Grey	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (29).jpg					['UCLan Hoodie','Slate Grey','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (29).jpg']
-    UCLan Hoodie	Bright Green	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (30).jpg					['UCLan Hoodie','Bright Green','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (30).jpg']
-    UCLan Hoodie	Bright Pink	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (31).jpg					['UCLan Hoodie','Bright Pink','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (31).jpg']
-    UCLan Hoodie	Burgundy New	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (32).jpg					['UCLan Hoodie','Burgundy New','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (32).jpg']
-    UCLan Hoodie	Navy New	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (33).jpg					['UCLan Hoodie','Navy New','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (33).jpg']
-    UCLan Hoodie	Bright Green	cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks	 Only £39.99	images/items/hoodies/hoodie (34).jpg					['UCLan Hoodie','Bright Green','cotton authentic character and practicality are combined in this comfy  warm and luxury hoodie for students that goes with everything to create casual looks',' Only £39.99','images/items/hoodies/hoodie (34).jpg']
-
 </div>
+<footer>
+    <div class="footer1">
+        <div class="grid1">
+            <h3> Links</h3>
+            <p></p>
+            <a href="https://www.uclansu.co.uk/">Students' Union</a>
+        </div>
+        <div class="grid2">
+            <h3> Contact</h3>
+            <p></p>
+            <p>Email: suinformation@uclan.ac.uk</p>
+            <p>Phone: 01772 89 3000</p>
+        </div>
+        <div class="grid3">
+            <h3> Location</h3>
+            <p></p>
+            <p>University of Central Lancashire Students' Union</p>
+            <p>Fylde Road, Preston. PR1 7BY  </p>
+            <p>Registered in England</p>
+            <p>Company Number: 07623917</p>
+            <p>Registered Charity Number: 1142616</p>
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>

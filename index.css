@@ -1,9 +1,11 @@
+/*entire page formatting */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
+/* header style*/
 .header1{
     border:1px solid #BE1622 ;
     background-color: #BE1622;
@@ -14,6 +16,7 @@
     padding: 10px;
     width:100%;
 }
+/*menu navigation links formatting */
 .menu{
     margin-left: 700px;
     margin-top: -30px;
@@ -27,6 +30,7 @@
 
 
 }
+/* shop name formatting*/
 .title{
     margin-left: 300px;
     margin-top: -30px;
@@ -42,13 +46,20 @@
     color:#A4D3F2;
 
 }
+/* adding a hover to the links*/
 .menu li a:hover {
     background-color: #F2BE1A;
 }
+/* uclan logo */
 .logo{
     margin-left: 50px;
 
 }
+.hamburger {
+    width: 30px;
+    margin-left: 650px;
+}
+/*titles on top of videos */
 #h2{
     color: #F2BE1A;
     margin-top: 20px;
@@ -57,21 +68,18 @@
     color: #F2BE1A;
     margin-top: 20px;
 }
+/* uclan moto (where opportunity creates success*/
 #h1{
     font-size: 3em;
 }
+/* all h1, h2, videos formatting*/
 .main{
     margin-left: 150px;
     margin-top: 50px;
     align-items: center;
 
 }
-#video1{
-
-}
-#video2{
-
-}
+/* footer formatting*/
 .footer1{
     position: sticky;
     display:block;
@@ -82,6 +90,7 @@
     height: 220px;
     width:100%;
 }
+/*three grids on footer */
 .grid1{
     margin-left: 50px;
     margin-top: 50px;
@@ -95,10 +104,27 @@
     margin-top: -60px;
 
 }
+/* product page image width*/
+.products img{
+   width: 300px;
+}
+/* product page description formatting*/
+#description{
+    width: 500px;
+    margin-left: 500px;
+}
+#button{
+    width: 500px;
+}
+#hoodies img{
+    width: 300px;
+}
+
 
 /* the code was adopted by:https://www.w3schools.com/html/html_responsive.asp */
-@media screen and (max-width: 1500px) {
-    .logo, .menu,.menu,.menu,.menu,.menu.header1 {
+@media screen and (max-width: 800px) {
+    menu ul {
+        position: absolute;
         width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
 }
